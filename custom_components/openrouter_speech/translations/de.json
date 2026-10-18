@@ -1,0 +1,69 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Dienst ist bereits konfiguriert",
+      "reauth_successful": "Erneute Authentifizierung war erfolgreich"
+    },
+    "error": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_auth": "Ungültige Authentifizierung",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "step": {
+      "user": {
+        "title": "OpenRouter Speech",
+        "data": {
+          "api_key": "API-Schlüssel"
+        },
+        "data_description": {
+          "api_key": "Ein OpenRouter-API-Schlüssel von openrouter.ai/keys"
+        }
+      },
+      "reauth_confirm": {
+        "title": "OpenRouter erneut authentifizieren",
+        "description": "Der gespeicherte API-Schlüssel ist nicht mehr gültig. Bitte einen neuen eingeben.",
+        "data": {
+          "api_key": "API-Schlüssel"
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "cannot_connect": "Verbindung fehlgeschlagen",
+      "invalid_auth": "Ungültige Authentifizierung",
+      "entry_not_loaded": "Die Integration ist nicht geladen."
+    },
+    "step": {
+      "init": {
+        "title": "OpenRouter Speech",
+        "data": {
+          "stt_model": "Modell für Spracherkennung",
+          "stt_prompt": "Hinweise zum Wortschatz",
+          "tts_model": "Modell für Sprachausgabe",
+          "tts_voice": "Stimme",
+          "timeout": "Zeitlimit (Sekunden)"
+        },
+        "data_description": {
+          "stt_model": "Jedes OpenRouter-Modell, das Audio als Eingabe annimmt.",
+          "stt_prompt": "Optional Namen von Räumen, Geräten oder Personen, damit sie richtig geschrieben werden.",
+          "tts_model": "Ein Modell mit Audio-Ausgabe, z. B. openai/gpt-audio-mini.",
+          "tts_voice": "Standardstimme für gesprochene Antworten.",
+          "timeout": "Wie lange auf OpenRouter gewartet wird."
+        }
+      }
+    }
+  },
+  "entity": {
+    "stt": {
+      "stt": {
+        "name": "Spracherkennung"
+      }
+    },
+    "tts": {
+      "tts": {
+        "name": "Sprachausgabe"
+      }
+    }
+  }
+}

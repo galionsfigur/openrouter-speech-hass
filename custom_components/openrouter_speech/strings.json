@@ -1,0 +1,69 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Service is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "title": "OpenRouter Speech",
+        "data": {
+          "api_key": "API key"
+        },
+        "data_description": {
+          "api_key": "An OpenRouter API key from openrouter.ai/keys"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate OpenRouter",
+        "description": "The stored API key is no longer valid. Enter a new one.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "entry_not_loaded": "The integration is not loaded."
+    },
+    "step": {
+      "init": {
+        "title": "OpenRouter Speech",
+        "data": {
+          "stt_model": "Speech-to-text model",
+          "stt_prompt": "Vocabulary hint",
+          "tts_model": "Text-to-speech model",
+          "tts_voice": "Voice",
+          "timeout": "Timeout (seconds)"
+        },
+        "data_description": {
+          "stt_model": "Any OpenRouter model that accepts audio input.",
+          "stt_prompt": "Optional names of rooms, devices or people, so they are spelled correctly.",
+          "tts_model": "A model with audio output, e.g. openai/gpt-audio-mini.",
+          "tts_voice": "Default voice for spoken answers.",
+          "timeout": "How long to wait for OpenRouter."
+        }
+      }
+    }
+  },
+  "entity": {
+    "stt": {
+      "stt": {
+        "name": "Speech-to-text"
+      }
+    },
+    "tts": {
+      "tts": {
+        "name": "Text-to-speech"
+      }
+    }
+  }
+}

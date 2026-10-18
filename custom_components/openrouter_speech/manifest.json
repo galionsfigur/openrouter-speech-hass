@@ -1,0 +1,12 @@
+{
+  "domain": "openrouter_speech",
+  "name": "OpenRouter Speech",
+  "codeowners": ["@galionsfigur"],
+  "config_flow": true,
+  "documentation": "https://github.com/galionsfigur/openrouter-speech-hass",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/galionsfigur/openrouter-speech-hass/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
